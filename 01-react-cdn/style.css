@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  color: snow;
+  text-align: center;
+  font-family: sans-serif;
+}
+.bottonsGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+@media (min-width: 768px) {
+    .bottonsGrid{
+        grid-template-columns:repeat(2,1fr);
+
+    } 
+}
+.menor{
+    color: tomato;
+}
+
+.mayor{
+    color: limegreen;
+}
+
+button {
+    margin: 1rem 0.5rem;
+    padding: 0.5rem;
+    max-width: 10rem;
+    background-color: rgb(241, 239, 239);
+    border: 0;
+    
+}
+
+button:hover{
+    /* transform: scale(1.2); */
+    cursor: pointer;
+}
